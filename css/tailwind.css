@@ -675,10 +675,6 @@ video {
   margin-top: 16rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -713,6 +709,10 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mr-96 {
@@ -759,16 +759,16 @@ video {
   height: 1.75rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-36 {
   height: 9rem;
 }
 
 .h-56 {
   height: 14rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-96 {
@@ -934,12 +934,12 @@ video {
   border-radius: 0.375rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-t-lg {
@@ -955,11 +955,6 @@ video {
   border-width: 1px;
 }
 
-.border-theme-tw {
-  --tw-border-opacity: 1;
-  border-color: rgb(63 63 255 / var(--tw-border-opacity));
-}
-
 .border-gray-800 {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
@@ -968,6 +963,11 @@ video {
 .border-input-border-tw {
   --tw-border-opacity: 1;
   border-color: rgb(86 86 102 / var(--tw-border-opacity));
+}
+
+.border-theme-tw {
+  --tw-border-opacity: 1;
+  border-color: rgb(63 63 255 / var(--tw-border-opacity));
 }
 
 .border-gray-600 {
@@ -1058,16 +1058,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1076,6 +1066,16 @@ video {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .pb-12 {
@@ -1146,14 +1146,14 @@ video {
   color: rgb(163 163 255 / var(--tw-text-opacity));
 }
 
-.text-secondary-tw {
-  --tw-text-opacity: 1;
-  color: rgb(145 145 164 / var(--tw-text-opacity));
-}
-
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-secondary-tw {
+  --tw-text-opacity: 1;
+  color: rgb(145 145 164 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1283,6 +1283,20 @@ body {
 
 .nav-dot:hover span {
   opacity: 1;
+}
+
+/* ###### Project Card Styles ###### */
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.03);
 }
 
 .hover\:scale-110:hover {

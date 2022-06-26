@@ -62,3 +62,14 @@ body {
 .nav-dot:hover span {
   opacity: 1;
 }
+
+/* ###### Project Card Styles ###### */
+.img-hover-zoom {
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.03);
+}
