@@ -1,0 +1,42 @@
+Submitted URL of working site in the comments when submitting
+    Meets Expectations:
+        ✔ URL in comments points to a working web site @started(22-06-24 12:16) @done(22-06-24 15:12) @lasted(2h56m39s)
+
+Mobile-first design
+    Meets Expectations:
+        ✔ Design is legible and easily usable  on a mobile phone sized screen of 320px and on desktop screen sizes @started(22-06-24 12:16) @done(22-06-24 15:12) @lasted(2h56m52s)
+        ✔ The HTML files include the viewport meta tag in the head of each document @started(22-06-24 12:16) @done(22-06-24 15:12) @lasted(2h56m50s)
+
+    Exceeds Expectations:
+        ✔ Add another breakpoint for tablet sized screens @started(22-06-24 12:16) @done(22-06-24 15:12) @lasted(2h56m58s)
+
+Navigation and Links
+    Meets Expectations:
+        ☐ Navigation links are present and all the links work as expected @started(22-06-24 12:16)
+       
+    
+Images that link to at least 4 portfolio projects
+    Meets Expectations:
+        ☐ 4 images that link to individual, live, functional projects @started(22-06-24 12:16)
+    
+    Exceeds Expectations:
+        ☐ Links to more than 4 projects @started(22-06-24 12:16)
+
+Contact Information
+    Meets Expectations:
+        ☐ Contact Information and Social Media links @started(22-06-24 12:16)
+    
+    Exceeds Expectations:
+        ☐ Use SVG images for icons @started(22-06-24 12:16)
+
+JavaScript Interactivity
+    Meets Expectations:
+        ☐ At least one example of Javascript Interactivity, that is triggered by an event @started(22-06-24 12:16)
+    
+    Exceeds Expectations:
+        ☐ More than one example of Javascript Interactivity, that is triggered by an event @started(22-06-24 12:16)
+
+Valid Code
+    Meets Expectations:
+        ☐ HTML and CSS code passes the validation @started(22-06-24 12:16)
+        ☐ HTML and CSS errors are accepted as exceptions @started(22-06-24 12:16)
