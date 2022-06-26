@@ -11,13 +11,15 @@ const validateMessage = document.getElementById("send");
 validateMessage.addEventListener("click", (e) => {
   if (email.value === "" && name.value === "") {
     e.preventDefault();
-    alert("Please make sure you enter a FAKE name and a FAKE email");
+    alert(
+      "Please make sure you enter your full name and a complete email address"
+    );
   } else if (name.value === "") {
     e.preventDefault();
-    alert("Please make sure you enter a FAKE name");
+    alert("Please make sure you enter your full name");
   } else if (email.value === "") {
     e.preventDefault();
-    alert("Please make sure you enter a FAKE email ");
+    alert("Please make sure you enter a complete email address ");
   } else {
     alert(
       `Message function does not quite work yet, Please use my social media to contact me`
