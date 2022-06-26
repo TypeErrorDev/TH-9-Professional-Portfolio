@@ -20,6 +20,75 @@
     <title>Matt Pantel - Front End Dev</title>
   </head>
   <body class="bg-body-tw text-white font-poppins pb-12">
-    hello
+    <header class="py-6">
+      <div class="hidden md:flex md:space-x-12 md:items-center">
+        <div
+          class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full text-xl logo"
+          id="top"
+        >
+          { TypeErrorDev }
+        </div>
+        <a href="#top" class="text-selected-text-tw">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">
+          <button
+            class="px-6 py-2 bg-theme-tw font-bold mr-7 hover:brightness-110"
+          >
+            Contact
+          </button>
+        </a>
+      </div>
+      <div class="md:hidden flex justify-end items-center mr-5 mb-3">
+        <button class="outline-none mobile-menu-button">
+          <svg
+            id="svg-menu"
+            width="26"
+            height="18"
+            viewBox="0 0 26 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="hidden mobile-menu md:hidden bg-gray-800">
+        <ul class="">
+          <li class="active">
+            <a
+              href="#top"
+              class="block text-sm px-4 py-4 text-white bg-theme-tw font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block text-sm px-4 py-4 hover:bg-theme-tw transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#work"
+              class="block text-sm px-4 py-4 hover:bg-theme-tw transition duration-300"
+              >Work</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-sm px-4 py-4 hover:bg-theme-tw transition duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
   </body>
 </html>
