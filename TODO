@@ -30,11 +30,11 @@ Contact Information
         ✔ Use SVG images for icons @started(22-06-24 12:16) @done(22-06-26 14:16) @lasted(2d2h44s)
 
 JavaScript Interactivity
-    Meets Expectations:
-        ☐ At least one example of Javascript Interactivity, that is triggered by an event @started(22-06-24 12:16)
-    
-    Exceeds Expectations:
-        ☐ More than one example of Javascript Interactivity, that is triggered by an event @started(22-06-24 12:16)
+    ✔ Meets Expectations: @done(22-06-26 14:50)
+        ✔ At least one example of Javascript Interactivity, that is triggered by an event @started(22-06-24 12:16) @done(22-06-26 14:50) @lasted(2d2h34m1s)
+    ✔ @done(22-06-26 14:50)
+    ✔ Exceeds Expectations: @done(22-06-26 14:50)
+        ✔ More than one example of Javascript Interactivity, that is triggered by an event @started(22-06-24 12:16) @done(22-06-26 14:50) @lasted(2d2h34m1s)
 
 Valid Code
     Meets Expectations:
