@@ -66,10 +66,20 @@ body {
 /* ###### Project Card Styles ###### */
 .img-hover-zoom {
   overflow: hidden;
+  border: 1px solid white;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .img-hover-zoom img {
   transition: transform 0.5s ease;
 }
 .img-hover-zoom:hover img {
   transform: scale(1.03);
+}
+.view-btn {
+  border: 1px solid white;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
