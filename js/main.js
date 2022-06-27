@@ -22,7 +22,7 @@ validateMessage.addEventListener("click", (e) => {
     alert("Please make sure you enter a complete email address ");
   } else {
     alert(
-      `Message function does not quite work yet, Please use my social media to contact me`
+      `Thank you stopping by! Please reach out to me via my LinkedIn or Twitter page. `
     );
   }
 });
