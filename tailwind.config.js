@@ -13,7 +13,7 @@ module.exports = {
         "input-border-tw": "#565666", // Light grey // rbg(86, 896, 102) // CMYK (16%, 16%, 0%, 60%)
         "input-tw": "#2A2A35", // Dark blue almost black // rgb(42, 42, 53) // CMYK (21%, 21%, 0%, 79%)
         "alt-color": "#1789fc", // light blue // rgb(23, 137, 252) // CMYK (91%, 46%, 0%, 1%)
-        "black-tw": "#000",
+        "black-tw": "#232020",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
