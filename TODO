@@ -40,3 +40,160 @@ Valid Code
     Meets Expectations:
         ✔ HTML and CSS code passes the validation @started(22-06-24 12:16) @done(22-06-26 14:16) @lasted(2d2h54s)
         ✔ HTML and CSS errors are accepted as exceptions @started(22-06-24 12:16) @done(22-06-26 14:16) @lasted(2d2h54s)
+
+
+Review Your Resources
+
+Before you start the project, be sure to review the material and resources available to you.
+
+The “Project Resources” section on the right-hand side of this page contains links to optional project resources that can help you complete the project.
+Google is a developer’s best friend. Even the pros use it every day to check on any number of things. If you get stuck, try using your Google skills to find the information you need. If you aren't finding the information you need, try rephrasing your search.
+Your friendly Slack team is a helpful, supportive community of student developers of all levels working together to support one another on this journey. This is a great place to find guidance, advice, and encouragement. The “Get Help on Slack” button just below the “Project Resources” section will lead directly to your Slack team.
+Getting Started with the Project Files
+
+If you haven’t already, download the project's starter files, unzip them, add them to your project folder, and push them to your GitHub repo.
+Open the project in your text editor and navigate to the root directory of the project in the terminal.
+Make sure that the node_modules folder is listed in the .gitignore file.
+Run the npm install command in the terminal to install the project dependencies.
+Run the npm run seed command in the terminal. This will create the fsjstd-restapi.db database and seed it with initial data. Pro Tip: You can use DB Browser to test that the fsjstd-restapi.db database has been properly created and seeded.
+Use the npm start command in the terminal to launch the application and go to http://localhost:5000/ to make sure the app is working properly. You should see a “Welcome to the REST API project!” message.
+Additional note for macOS Monterey users.
+
+Apple introduced some changes with AirPlay when they launched macOS Monterey. Now, the AirPlay Receiver uses ports 5000 and 7000. You will need to follow these instructions to turn off the AirPlay receiver, to be able to use port 5000 with this project.
+
+Database Configuration
+
+Install Sequelize.
+Install the Sequelize CLI.
+Initialize the project using the npx sequelize init command.
+Update the development environment object of the config.js file so that the storage key has a value of "fsjstd-restapi.db" and dialect key has a value of "sqlite".
+Use Sequelize's authenticate function to test the database connection. A message should be logged to the console informing the user that the connection was successful or that there was an error.
+Define the Models
+
+This project will contain two models. One for the Users table and another for the Courses table.
+
+The User model should include the following attributes set to the correct data type:
+firstName (String)
+lastName (String)
+emailAddress (String)
+password (String)
+The Course model should include the following attributes set to the correct data type:
+title (String)
+description (Text)
+estimatedTime (String)
+materialsNeeded (String)
+userId (created in the model associations with the foreignKey property, and equals the id from the Users table)
+Pro Tip: When defining models for an existing database the model names and attributes need to match the tables in the database exactly otherwise Sequelize will throw an error.
+
+Define Model Associations
+
+In the Users model, add a one-to-many association between the User and Course models using the hasMany() method.
+In the Courses model, add a one-to-one association between the Course and User models using the belongsTo() method.
+Set up for testing
+
+You should be familiar with Postman from some of the material in this unit. If you haven't already, download and install Postman now.
+The Starter Files for the project include a Postman Collection that can be used to test your application. Open Postman and import the RESTAPI.postman_collection.json file.
+Another option for testing your application is to use the REST Client package. Once you have installed that package as a dependency, you can test the app using the tests.http file. Pro Tip: Avoid making any changes to the requests in the included test files. You should be able to test your application using the requests in the test files as-is.
+Create the User Routes
+
+Create the following routes:
+A /api/users GET route that will return all properties and values for the currently authenticated User along with a 200 HTTP status code.
+A /api/users POST route that will create a new user, set the Location header to "/", and return a 201 HTTP status code and no content.
+Test your routes
+Create the Courses Routes
+
+Create the following routes:
+A /api/courses GET route that will return all courses including the User associated with each course and a 200 HTTP status code.
+A /api/courses/:id GET route that will return the corresponding course including the User associated with that course and a 200 HTTP status code.
+A /api/courses POST route that will create a new course, set the Location header to the URI for the newly created course, and return a 201 HTTP status code and no content.
+A /api/courses/:id PUT route that will update the corresponding course and return a 204 HTTP status code and no content.
+A /api/courses/:id DELETE route that will delete the corresponding course and return a 204 HTTP status code and no content.
+Test your routes
+Add Validations
+
+When a new user is created using the /api/users POST route the application should include validation to ensure that the following required values are properly submitted in the request body:
+firstName
+lastName
+emailAddress
+password
+When a new course is created using the /api/courses POST route the application should include validation to ensure that the following required values are properly submitted in the request body:
+title
+description
+When an existing course is updated using the /api/courses PUT route the application should include validation to ensure that the following required values are properly submitted in the request body:
+title
+description
+If any of these required values are not properly submitted, the application should respond by sending a 400 HTTP status code and validation errors.
+Test your routes
+Password Security
+
+For security reasons, we don't want to store user passwords in the database as clear text.
+
+When a new user is created using the /api/users POST route the user's password should be hashed before persisting the user to the database. One option for hashing passwords is to use the bcrypt.js package.
+Test your routes
+Add User Authentication Middleware
+
+A user must be authenticated in order to get data on the current user or to create, update, or delete courses.
+
+Create a custom middleware function that authenticates the user credentials from the Authorization header on the request.
+If the authentication is successful, add the user account to the Request object and continue processing the request.
+If authentication fails, return a 401 HTTP status code and generic “Access Denied” message.
+The custom middleware should be used to authenticate the following routes:
+/api/users GET
+/api/courses POST
+/api/courses/:id PUT
+/api/courses/:id DELETE
+Test your routes
+Test Your Application Using Postman
+
+With your application running, use the requests in the collection to test your project's routes a few more times as things might have changed as you added more routes. Make sure everything is working as outlined in the How you will be graded tab.
+Finishing the Project
+
+The final stage of the project is perhaps the most important. This is where your developer skills shine as you carefully double-check that you've accomplished all requirements and that your project is ready for submission.
+
+Code Comments - Be sure you have included comments to briefly describe your code and what it does.
+Code Readability - Readability is second only to functionality. Double-check your code to ensure the spacing and indentation is consistent and in keeping with best practices.
+Before Submitting the Project
+
+Before you submit your project, check off each item in the project submissions checklist below.
+
+ I have read all of the project instructions, including the “How you’ll be graded” section for this project.
+
+ I understand what is needed to receive a Meets or Exceeds Expectations grade and asked for clarification about grading requirements on Slack if necessary.
+
+ My GitHub repo for this project contains only this project, only files needed to make this project run, and a README.md file providing details about my project.
+
+ I wrote all of my own code for this project. Any code included in my project that I did not write myself is appropriately attributed to its source.
+
+ I have completed all of the project requirements and believe the project is ready to receive a Meets or Exceeds Expectations grade.
+
+ I have received a preliminary review of my project in Slack to catch anything I might have missed.
+
+ I understand that to receive an Exceeds Expectations grade, I must complete all extra credit items.
+
+ I understand that what I submit is what will get reviewed and that when I submit my project, any changes I make after the submission won't be seen by my reviewer.
+
+Extra Credit
+
+To get an "exceeds" rating, complete all of the steps below:
+
+ 3 steps
+Ensure User Email Address is Valid and Unique
+
+Add validation to the emailAddress attribute in the User model to ensure that the provided email address is properly formatted.
+Add the unique constraint to the User model to ensure that the provided email address isn't already associated with an existing user.
+Update the User Routes
+
+Update the /api/users GET route so that the following properties are filtered out of the response:
+password
+createdAt
+updatedAt
+Update the /api/users POST route to check for and handle SequelizeUniqueConstraintError errors.
+If a SequelizeUniqueConstraintError is thrown a 400 HTTP status code and an error message should be returned.
+Update the Course Routes
+
+Update the /api/courses and /api/courses/:id GET routes so that the following properties are filtered out of the response:
+createdAt
+updatedAt
+Update the /api/courses/:id PUT and /api/courses/:id DELETE routes to ensure that the currently authenticated user is the owner of the requested course.
+If the currently authenticated user is not the owner of the requested course a 403 HTTP status code should be returned.
+
